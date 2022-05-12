@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.header {
+    padding: 1rem;
+    background-color: #247ba0;
+    color: #fff;
+}
+
+.header h3 {
+    margin: 0;
+}
+
+.header p {
+    margin: 15px 0 20px;
+}
+
+.header input {
+    border: none;
+    background-color: #174e66;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border-radius: 34px;
+    width: 100%;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.result {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.result li {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    gap: 15px;
+}
+
+.result li.hide {
+    display: none;
+}
+
+.result li > h4 {
+    margin: .5rem;
+}
+
+.result li:not(:last-child){
+    border-bottom: 1px solid #eee;
+}
+
+.result li img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.user-info {
+    height: fit-content;
+}
+
+.user-info h4 {
+    margin: 0 0 10px;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: .9rem;
+}
